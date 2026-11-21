@@ -88,18 +88,20 @@ void main() {
   stdout.write("\n Enter your choice: ");
   String? choice = stdin.readLineSync();
 
+double PRICE = 0;
+
 if (choice == "pizza") {
-  //double PRICE = 150;
+  PRICE = 150;
   print("Pizza is available - Price: 150");
   
 } else if (choice == "burger") {
-  //double PRICE = 100;
+PRICE = 100;
   print("Burger is available - Price: 100");
 } else if (choice == "Pasta") {
-  //double PRICE = 120;
-  print("Pasta is available - Price: 120");
+PRICE = 120;
+   print("Pasta is available - Price: 120");
 } else if (choice == "chicken") {
-  //double PRICE= 180;
+   PRICE= 180;
   print("Chicken is available - Price: 180");
 } else {
   print("Not available");
@@ -141,7 +143,7 @@ if (choice == "pizza") {
     print("================================");
     print("Customer: ${p1.name}");
     print("Your choice : $choice");
-    //print("Price $PRICE EGP");
+    print("Price $PRICE EGP");
     print("================================");
 
 }
